@@ -7,7 +7,7 @@ use Test::Mojo;
 # for mock service
 use Mojolicious;
 
-my $script = path(__FILE__)->dirname->sibling('mojo.pl');
+my $script = path(__FILE__)->dirname->sibling('app.pl');
 
 # testing instance with app and injected config
 my $t = Test::Mojo->new($script => {
